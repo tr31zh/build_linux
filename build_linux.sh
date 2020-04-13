@@ -34,3 +34,7 @@ echo Setting git ...
 git config --global user.email maviane@gmail.com
 git config --global user.name "Felicià MAVIANE"
 git config --global credential.helper store
+
+echo Copy configuration files
+cp .p10k.zsh ~/
+cp .zshrc ~/
