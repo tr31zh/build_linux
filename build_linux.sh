@@ -45,3 +45,5 @@ touch ~/.Xdefaults
 cp .p10k.zsh ~/
 cp .zshrc ~/
 cp .xinitrc ~/
+
+echo Done
