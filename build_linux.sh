@@ -3,6 +3,10 @@
 echo updating and upgrading
 sudo apt-get update && sudo apt-get upgrade
 
+echo First step
+export RUNLEVEL=3
+sudo /etc/init.d/dbus start 
+
 echo Switching shell
 chsh -s /usr/bi/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -21,8 +25,9 @@ echo Getting graphic libraries
 sudo apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
 
 echo installing window manager
+sudo apt-get install xfce4
+sudo apt-get install xfce4-goodies
 sudo apt install xubuntu-desktop
-sudo apt-get install python-xdg
 
 echo Getting NPM
 sudo apt-get install npm
@@ -36,5 +41,7 @@ git config --global user.name "Felicià MAVIANE"
 git config --global credential.helper store
 
 echo Copy configuration files
+touch ~/.Xdefaults
 cp .p10k.zsh ~/
 cp .zshrc ~/
+cp .xinitrc ~/

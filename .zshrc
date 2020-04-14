@@ -139,6 +139,7 @@ export NVM_DIR="$HOME/.nvm"
 # My shit
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 export BROWSER="/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe"
+export RUNLEVEL=3
 
 fortune
 
