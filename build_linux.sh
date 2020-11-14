@@ -17,13 +17,6 @@ sudo apt-get -y htop
 sudo apt -y install zsh
 echo
 
-echo installing window manager
-sudo apt-get -y install xfce4
-sudo apt-get -y install xfce4-terminal
-sudo apt-get -y install xfce4-goodies
-sudo apt -y install xubuntu-desktop
-echo
-
 echo Getting NPM
 sudo apt-get -y install npm
 echo
@@ -35,7 +28,6 @@ echo
 echo Setting git ...
 git config --global user.email maviane@gmail.com
 git config --global user.name "Felicià MAVIANE"
-# git config --global credential.helper store
 git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"
 echo
 
