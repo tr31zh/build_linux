@@ -17,4 +17,4 @@ cp ~/build_linux/.zshrc ~/
 cp ~/build_linux/.xinitrc ~/
 echo
 
-echo Done
+echo Done ...
